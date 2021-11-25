@@ -1,21 +1,20 @@
 
 
-const persona = {
-    nombre: 'Tony',
-    apellido: 'Stark',
-    edad: 45,
-    direccion:{
-        ciudad: 'New York',
-        zip: 5354564,
-        lat: 14.3232,
-        lng: 34.9233321
-    }
-};
+// Arreglos en JS
+// const arr = new Array(100);
+const arr = [1,2,3,4];
 
-// no hacer const persona2 = persona; usar operador spread {...}
-const persona2 = {...persona};
-persona2.nombre = 'Peter';
+// arr.push(1); no usar(modifica el objeto principal)
+// arr.push(2);
+// arr.push(3);
+// arr.push(4);
+// arr.push(5);
+let arr2 = [...arr,5];
+// arr2.push(5);
+const arr3 = arr2.map( function(numero){
+    return numero * 2
+} );
 
-
-console.log(persona);
-console.log(persona2);
+console.log(arr);
+console.log(arr2);
+console.log(arr3);
