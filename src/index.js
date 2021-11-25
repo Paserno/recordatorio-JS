@@ -1,33 +1,32 @@
 
-// Desestructuracion
-// Asignacion Desestructurante
 
-const persona = {
-    nombre: 'Tony',
-    edad: 45,
-    clave: 'Ironman'
-};
 
-// const {nombre, edad, clave} = persona;
+const personajes = ['Goku', 'Vegeta', 'Trunks'];
+const [,,p3] = personajes;
+console.log(p3);
 
-// console.log(nombre);
-// console.log(edad);
-// console.log(clave);
 
-/* eslint-disable react-hooks/rules-of-hooks */
-const useContext = ({clave, nombre, edad, rango= 'Guerrero'}) => {
-    // console.log(nombre, edad, rango);
-    return {
-        nombreClave: clave,
-        anios: edad,
-        latlng: {
-            lat: 14.555,
-            lng: -12.5454
-        }
-    }
-
+const retrnaArr = () => {
+    return ['ABC', 123];
 }
 
-const {nombreClave, anios, latlng:{lat,lng}} = useContext(persona);
-console.log(nombreClave, anios);
-console.log(lat,lng);
+const [letras, numeros] = retrnaArr();
+console.log(letras, numeros);
+
+
+/* eslint-disable react-hooks/rules-of-hooks */
+
+/**         Tarea
+ * 1. el primer valor del arr se llamá nombre
+ * 2. se llamara setNombre
+ */
+const useState = (valor) =>{
+    return [valor, () =>{console.log('Hola Mundo')}];
+}
+
+const [nombre, setNombre] = useState('Goku');
+console.log(nombre)
+setNombre();
+
+
+
