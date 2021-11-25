@@ -1,4 +1,4 @@
-import heroes,{owners} from '../data/heroes';
+import heroes from '../data/heroes';
 
 // console.log(owners);
 // uso de callback, para regresar el elemento que necesito
