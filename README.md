@@ -10,3 +10,7 @@ const getHeroeById = (id) => heroes.find((heroe) => heroe.id === id);
 ``````
 const getHeroeByOwner = (owner)=> heroes.filter((heroe) => heroe.owner === owner);
 ``````
+
+#
+
+> __Elemento Posterior 👀:__ __[Primeros pasos de React 👣](https://github.com/Paserno/first-react-couterapp)__
